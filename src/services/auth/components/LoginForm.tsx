@@ -2,10 +2,16 @@
 
 import { useState } from "react";
 import { login } from "../api/authApi";
+import { getMe } from "@/services/users/userService";
 import { useAuthStore } from "@/store/authStore";
+import { useRouter } from "next/navigation";
 
 export default function LoginForm() {
+
+    const router = useRouter();
+
     const setToken = useAuthStore((state) => state.setToken);
+    const setUser = useAuthStore((state) => state.setUser);
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -13,9 +19,21 @@ export default function LoginForm() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
+        // 1. 로그인
         const res = await login({ email, password });
 
-        setToken(res.accessToken);
+        // 2. 토큰 저장
+        const token = res.accessToken;
+        setToken(token);
+
+        // 3. 유저 조회
+        const user = await getMe();
+
+        // 4. 유저 저장
+        setUser(user);
+
+        // 5. 메인 이동
+        router.push("/");
     };
 
     return (
