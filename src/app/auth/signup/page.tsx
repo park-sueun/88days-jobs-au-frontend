@@ -139,8 +139,8 @@ export default function SignupPage() {
           {/* LOGIN LINK */}
           <p className="text-center text-sm text-gray-500 mt-6">
             Already have an account?{" "}
-            <a href="/auth/login" className="text-green-600 font-medium">
-              Login
+            <a href="/auth/signin" className="text-green-600 font-medium">
+              Sign In
             </a>
           </p>
         </div>

@@ -7,7 +7,7 @@ import { getMe } from "@/services/users/userService";
 import { useAuthStore } from "@/store/authStore";
 import { useRouter } from "next/navigation";
 
-export default function LoginPage() {
+export default function SigninPage() {
     
     const router = useRouter();
 
