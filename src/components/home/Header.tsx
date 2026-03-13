@@ -7,8 +7,13 @@ import Link from "next/link";
 export default function Header() {
 
   const user = useAuthStore((state) => state.user);
+  const hasHydrated = useAuthStore((state) => state.hasHydrated);
   const [open, setOpen] = useState(false);
 
+  if (!hasHydrated) {
+    return null;
+  }
+  
   return (
     <header className="w-full h-16 border-b border-gray-200 bg-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto h-full flex items-center justify-between">
