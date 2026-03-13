@@ -4,6 +4,7 @@ import SearchBar from "@/components/home/SearchBar";
 import MapPreview from "@/components/home/MapSection";
 import Header from "@/components/home/Header";
 import PopularJobs from "@/components/home/PopularJobs";
+import Footer from "@/components/home/Footer";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <Header />
       <Hero />
       <PopularJobs />
+      <Footer />
     </main>
   );
 }
