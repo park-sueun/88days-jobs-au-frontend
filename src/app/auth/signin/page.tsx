@@ -102,7 +102,7 @@ export default function SigninPage() {
                 type="submit"
                 className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition"
               >
-                LOGIN
+                SIGN IN
               </button>
             </form>
 
