@@ -5,7 +5,7 @@ import { MapPin, Locate } from "lucide-react";
 
 export default function HeroSection() {
     return (
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 py-12">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl font-bold mb-4">
             Find Your Next Farm Job in Australia
