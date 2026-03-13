@@ -91,7 +91,7 @@ export default function Header() {
                 <img
                   src={user.profileImageUrl || "/avatar.png"}
                   alt="avatar"
-                  className="w-8 h-8 rounded-full object-cover"
+                  className="w-7 h-7 rounded-full object-cover"
                 />
               </div>
 
@@ -122,7 +122,7 @@ export default function Header() {
 
                   <button
                     onClick={handleLogout}
-                    className="w-full text-left px-4 py-3 text-sm hover:bg-gray-100"
+                    className="w-full text-left px-4 py-3 text-sm hover:bg-gray-100 text-red-700"
                   >
                     Logout
                   </button>
