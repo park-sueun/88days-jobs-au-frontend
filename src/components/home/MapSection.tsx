@@ -18,15 +18,18 @@ const markers = [
   { lat: -37.8136, lng: 144.9631 },
 ];
 
+const libraries: "places"[] = ["places"];
+
 export default function MapSection() {
 
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAP_KEY!,
+    libraries,
     language: "en",
-    region: "AU"
+    region: "AU",
   });
 
-  if (!isLoaded) return <div>Loading...</div>;
+  if (!isLoaded) return <div>Loading map...</div>;
 
   return (
     <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={4}>
