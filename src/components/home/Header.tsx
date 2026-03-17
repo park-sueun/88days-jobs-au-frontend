@@ -118,6 +118,23 @@ export default function Header() {
                     Saved List
                   </button>
 
+                  {/* ADMIN MENU */}
+                  {user.role === "ADMIN" && (
+                    <>
+                      <div className="border-t border-gray-200" />
+
+                      <button
+                        onClick={() => {
+                          router.push("/admin");
+                          setOpen(false);
+                        }}
+                        className="w-full text-left px-4 py-3 text-sm hover:bg-gray-100 font-medium text-indigo-600"
+                      >
+                        Admin Dashboard
+                      </button>
+                    </>
+                  )}
+
                   <div className="border-t border-gray-200" />
 
                   <button
