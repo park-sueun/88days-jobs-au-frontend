@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import { useAuthStore } from "@/store/authStore";
-import { getMe } from "@/services/users/userService";
+import { getMe } from "@/domains/user/api/userApi";
 
 export default function Navbar() {
 

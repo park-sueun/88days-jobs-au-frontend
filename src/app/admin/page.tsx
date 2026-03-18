@@ -1,15 +1,13 @@
-import Sidebar from "@/components/admin/Sidebar"
-import StatCard from "@/components/admin/StatCard"
-import CompanyTable from "@/components/admin/CompanyTable"
+import Sidebar from "@/domains/company/components/Sidebar";
+import StatCard from "@/domains/company/components/StatCard";
+import CompanyTable from "@/domains/company/components/CompanyTable";
 
 export default function CompaniesPage() {
   return (
     <div className="flex min-h-screen bg-gray-100">
-      
       <Sidebar />
 
       <main className="flex-1 p-8">
-
         <div className="mb-8">
           <h1 className="text-3xl font-bold">Company Management</h1>
           <p className="text-gray-500">
@@ -26,9 +24,7 @@ export default function CompaniesPage() {
 
         {/* company list */}
         <CompanyTable />
-
       </main>
-
     </div>
-  )
+  );
 }

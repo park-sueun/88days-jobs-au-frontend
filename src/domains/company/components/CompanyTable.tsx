@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
-import { getCompanies } from "@/services/companies/api/companyApi"
+import { getCompanies } from "../api/companyApi" 
 
 type Company = {
   id: number

@@ -1,11 +1,11 @@
 "use client"
 
-import { createCompany } from "@/services/companies/api/companyApi"
+import { createCompany } from "@/domains/company/api/companyApi";
 import { useState } from "react"
 import { useRouter } from "next/navigation"
-import GoogleMapProvider from "@/components/admin/GoogleMapProvider"
-import AddressSearch from "@/components/admin/AddressSearch"
-import { CompanyCreateRequest } from "@/services/companies/components/CompanyForm"
+import GoogleMapProvider from "@/shared/lib/GoogleMapProvider";
+import AddressSearch from "@/domains/company/components/AddressSearch";
+import { CompanyCreateRequest } from "@/domains/company/components/CompanyForm";
 
 export default function CompanyCreatePage() {
     const router = useRouter();

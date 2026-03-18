@@ -3,7 +3,7 @@
 import MapSection from "./MapSection";
 import { MapPin, Locate } from "lucide-react";
 
-export default function HeroSection() {
+export default function Hero() {
     return (
       <section className="bg-gray-50 py-12">
         <div className="max-w-6xl mx-auto text-center">

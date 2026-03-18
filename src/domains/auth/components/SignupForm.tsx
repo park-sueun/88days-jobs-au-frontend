@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { signup } from "../api/authApi";
 import { SignupRequest, USER_ROLE, UserRole } from "../types/authTypes";
-import Modal from "@/components/ui/Modal";
+import Modal from "@/shared/components/ui/Modal";
 
 export default function SignupForm() {
 

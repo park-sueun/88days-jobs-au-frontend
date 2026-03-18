@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { login } from "@/services/auth/api/authApi";
-import { getMe } from "@/services/users/userService";
+import { login } from "@/domains/auth/api/authApi"; 
+import { getMe } from "@/domains/user/api/userApi";
 import { useAuthStore } from "@/store/authStore";
 import { useRouter } from "next/navigation";
 

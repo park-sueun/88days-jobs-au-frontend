@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react"
 import { useParams, useRouter } from "next/navigation"
-import { getCompany, deleteCompany } from "@/services/companies/api/companyApi"
-import Modal from "@/components/ui/Modal"
+import { getCompany, deleteCompany } from "@/domains/company/api/companyApi";
+import Modal from "@/shared/components/ui/Modal";
 
 export default function CompanyDetailPage() {
   const { id } = useParams()

@@ -1,10 +1,7 @@
-import Navbar from "@/components/layout/Navbar";
-import Hero from "@/components/home/Hero";
-import SearchBar from "@/components/home/SearchBar";
-import MapPreview from "@/components/home/MapSection";
-import Header from "@/components/home/Header";
-import PopularJobs from "@/components/home/PopularJobs";
-import Footer from "@/components/home/Footer";
+import Header from "@/domains/home/components/Header";
+import Hero from "@/domains/home/components/Hero";
+import PopularJobs from "@/domains/home/components/PopularJobs";
+import Footer from "@/domains/home/components/Footer";
 
 export default function HomePage() {
   return (

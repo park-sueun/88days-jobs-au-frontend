@@ -1,4 +1,4 @@
-import { apiClient } from "@/lib/apiClient";
+import { apiClient } from "@/shared/lib/apiClient";
 import { LoginRequest, SignupRequest } from "../types/authTypes";
 
 export const signup = async (data: SignupRequest) => {

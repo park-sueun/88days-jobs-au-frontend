@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { login } from "../api/authApi";
-import { getMe } from "@/services/users/userService";
+import { getMe } from "@/domains/user/api/userApi";
 import { useAuthStore } from "@/store/authStore";
 import { useRouter } from "next/navigation";
 
