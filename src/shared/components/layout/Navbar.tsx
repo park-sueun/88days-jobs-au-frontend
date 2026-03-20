@@ -76,7 +76,7 @@ export default function Navbar() {
             href="/workingHostels"
             className="hover:text-blue-600 transition"
           >
-            Working Hostel
+            Working Hostels
           </Link>
           <Link href="/agencies" className="hover:text-blue-600 transition">
             Agencies
