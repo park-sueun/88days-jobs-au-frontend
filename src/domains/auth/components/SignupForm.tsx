@@ -74,7 +74,7 @@ export default function SignupForm() {
               name="email"
               placeholder="Email"
               type="email"
-              className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-900"
               value={form.email}
               onChange={handleChange}
             />
@@ -90,7 +90,7 @@ export default function SignupForm() {
               name="password"
               type="password"
               placeholder="Password"
-              className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-900"
               value={form.password}
               onChange={handleChange}
             />
@@ -106,7 +106,7 @@ export default function SignupForm() {
               name="firstName"
               placeholder="First Name"
               type="text"
-              className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-900"
               value={form.firstName}
               onChange={handleChange}
             />
@@ -122,7 +122,7 @@ export default function SignupForm() {
               name="lastName"
               placeholder="Last Name"
               type="text"
-              className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-900"
               value={form.lastName}
               onChange={handleChange}
             />
@@ -138,7 +138,7 @@ export default function SignupForm() {
               name="role"
               value={form.role}
               onChange={handleRoleChange}
-              className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="mt-1 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-900"
             >
               <option value={USER_ROLE.WORKER}>Worker</option>
               <option value={USER_ROLE.EMPLOYER}>Employer</option>
@@ -148,7 +148,7 @@ export default function SignupForm() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-lg transition"
+            className="w-full bg-blue-900 hover:bg-blue-950 text-white font-semibold py-3 rounded-lg transition"
           >
             {loading ? "Signing up..." : "Signup"}
           </button>
@@ -160,7 +160,7 @@ export default function SignupForm() {
         >
           <button
             onClick={() => router.push("/auth/signin")}
-            className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg"
+            className="w-full bg-blue-900 hover:bg-blue-950 text-white py-3 rounded-lg"
           >
             Go to Sign In
           </button>

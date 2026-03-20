@@ -14,7 +14,7 @@ export default function SignupPage() {
         />
 
         <div className="absolute top-8 left-8 text-white text-4xl font-bold">
-          carparkly
+          {/* carparkly */}
         </div>
       </div>
 
