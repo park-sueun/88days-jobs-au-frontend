@@ -1,15 +1,21 @@
 import { apiClient } from "@/shared/lib/apiClient";
-import { CompanyCreateRequest } from "../components/CompanyForm";
+import { CompanyCreateRequest } from "../../admin/components/CompanyForm";
+import { Company, CompanyCategory, CompanyState } from "../types/company";
 
 export const createCompany = (data: CompanyCreateRequest) => {
   return apiClient.post("/api/admin/companies", data);
 };
 
-export const getCompanies = async () => {
-  const res = await apiClient.get("/api/companies")
-  console.log(res.data.content)
-  return res.data.content
-}
+export const getCompanies = async (params?: {
+  category?: CompanyCategory;
+  state?: CompanyState;
+  season?: string[];
+  page?: number;
+  size?: number;
+}) => {
+  const res = await apiClient.get("/api/companies", { params });
+  return res.data;
+};
 
 export const getCompany = async (id: number) => {
   const res = await apiClient.get(`/api/companies/${id}`)
