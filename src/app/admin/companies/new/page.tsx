@@ -4,8 +4,8 @@ import { createCompany } from "@/domains/company/api/companyApi";
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import GoogleMapProvider from "@/shared/lib/GoogleMapProvider";
-import AddressSearch from "@/domains/company/components/AddressSearch";
-import { CompanyCreateRequest } from "@/domains/company/components/CompanyForm";
+import AddressSearch from "@/domains/admin/components/AddressSearch";
+import { CompanyCreateRequest } from "@/domains/admin/components/CompanyForm";
 
 export default function CompanyCreatePage() {
     const router = useRouter();

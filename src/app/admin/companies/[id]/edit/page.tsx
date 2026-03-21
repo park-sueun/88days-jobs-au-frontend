@@ -3,9 +3,8 @@
 import { useEffect, useState } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { getCompany, updateCompany } from "@/domains/company/api/companyApi";
-import SummaryItem from "@/domains/company/components/SummaryItem";
-import FormInput from "@/domains/company/components/FormInput";
-import FormSelect from "@/domains/company/components/FormSelect";
+import FormInput from "@/domains/admin/components/FormInput";
+import FormSelect from "@/domains/admin/components/FormSelect";
 
 export default function CompanyEditPage() {
   const { id } = useParams()

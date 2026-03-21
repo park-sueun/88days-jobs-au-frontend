@@ -1,6 +1,6 @@
-import Sidebar from "@/domains/company/components/Sidebar";
-import StatCard from "@/domains/company/components/StatCard";
-import CompanyTable from "@/domains/company/components/CompanyTable";
+import Sidebar from "@/domains/admin/components/Sidebar";
+import StatCard from "@/domains/admin/components/StatCard";
+import AdminCompanyTable from "@/domains/admin/components/AdminCompanyTable";
 
 export default function AdminCompaniesPage() {
   return (
@@ -23,7 +23,7 @@ export default function AdminCompaniesPage() {
         </div>
 
         {/* company list */}
-        <CompanyTable />
+        <AdminCompanyTable />
       </main>
     </div>
   );

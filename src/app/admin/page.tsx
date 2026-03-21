@@ -1,6 +1,6 @@
-import Sidebar from "@/domains/company/components/Sidebar";
-import StatCard from "@/domains/company/components/StatCard";
-import CompanyTable from "@/domains/company/components/CompanyTable";
+import Sidebar from "@/domains/admin/components/Sidebar";
+import StatCard from "@/domains/admin/components/StatCard";
+import CompanyTable from "@/domains/admin/components/AdminCompanyTable";
 
 export default function CompaniesPage() {
   return (
