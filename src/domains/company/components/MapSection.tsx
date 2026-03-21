@@ -4,7 +4,7 @@ import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 
 const containerStyle = {
   width: "100%",
-  height: "500px",
+  height: "100%",
 };
 
 const center = {
@@ -21,7 +21,6 @@ const markers = [
 const libraries: "places"[] = ["places"];
 
 export default function MapSection() {
-
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAP_KEY!,
     libraries,
@@ -32,10 +31,15 @@ export default function MapSection() {
   if (!isLoaded) return <div>Loading map...</div>;
 
   return (
-    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={4}>
-      {markers.map((marker, i) => (
-        <Marker key={i} position={marker} />
-      ))}
-    </GoogleMap>
+    <div className="flex justify-center px-6 py-6">
+      {/* wrapper */}
+      <div className="w-full max-w-7xl h-[420px] rounded-2xl overflow-hidden shadow-md">
+        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={4}>
+          {markers.map((marker, i) => (
+            <Marker key={i} position={marker} />
+          ))}
+        </GoogleMap>
+      </div>
+    </div>
   );
 }
