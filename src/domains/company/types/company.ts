@@ -16,8 +16,8 @@ export interface Company {
   state: CompanyState;
   postcode: string;
 
-  lat: number;
-  lng: number;
+  latitude: number;
+  longitude: number;
 
   category: CompanyCategory;
   season?: string;
