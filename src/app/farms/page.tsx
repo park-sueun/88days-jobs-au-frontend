@@ -1,20 +1,26 @@
-// app/companies/farms/page.tsx
+"use client";
 
-import CompanyHero from "@/domains/company/components/CompanyHero";
-import CompanyFilters from "@/domains/company/components/CompanyFilters";
-import CompanyListLayout from "@/domains/company/components/CompanyListLayout";
-import CompanyTable from "@/domains/company/components/CompanyTable";
 import Navbar from "@/shared/components/layout/Navbar";
 import MapSection from "@/domains/company/components/MapSection";
 import CompanyListClient from "@/domains/company/components/CompanyListClient";
 import { useCompanies } from "@/domains/company/hooks/useCompanies";
 
 export default function FarmPage() {
+  const { companies, loading, error } = useCompanies("FARM");
+
   return (
     <main>
       <Navbar />
-      <MapSection/>
-      <CompanyListClient category="FARM" />;
+
+      {/* Map */}
+      <MapSection companies={companies} loading={loading} error={error} />
+
+      {/* List */}
+      <CompanyListClient
+        companies={companies}
+        loading={loading}
+        error={error}
+      />
     </main>
   );
 }
